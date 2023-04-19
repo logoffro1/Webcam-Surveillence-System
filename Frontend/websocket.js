@@ -1,11 +1,13 @@
 $(document).ready(function() {
 
-	var ws = new WebSocket("ws://127.0.0.1:8123");
-
+	var ws = new WebSocket("ws://d8ba-80-114-172-251.ngrok-free.app");
+	//var ws = new WebSocket("ws://127.0.0.1:8123");
 	ws.onopen = function(e) {
 		if (typeof console !== 'undefined') {
 			console.info('WS open');
 		}
+		alert("test");
+
 	};
 
 	ws.onmessage = function (e) {
@@ -15,7 +17,6 @@ $(document).ready(function() {
 			i = 0,
 			$webcams = $('#webcams'),
 			$img = null;
-
 		if (typeof console !== 'undefined') {
 			console.info('WS message', type);
 		}

@@ -1,0 +1,7 @@
+org\example\Main.class
+org\example\OpenImajDevice.class
+org\example\OpenImajDriver$GetDevicesTask.class
+org\example\OpenImajDriver.class
+org\example\Main$1.class
+org\example\WebcamCache.class
+org\example\WebcamWebSocketHandler.class
