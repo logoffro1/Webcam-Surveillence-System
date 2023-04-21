@@ -17,14 +17,10 @@ import java.util.Map;
 public class WebcamCache implements WebcamUpdater.DelayCalculator, WebcamListener {
     private static final Logger LOG = LoggerFactory.getLogger(WebcamCache.class);
 
-    /**
-     * How often images are updated on Dasding server.
-     */
+
     private static final long DELAY = 10;
 
-    /**
-     * Webcams list.
-     */
+
     private Map<String, Webcam> webcams = new HashMap<String, Webcam>();
 
     /**

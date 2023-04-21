@@ -18,10 +18,6 @@ public class OpenImajDevice implements WebcamDevice {
 
     private static final Logger LOG = LoggerFactory.getLogger(OpenImajDriver.class);
 
-    /**
-     * Artificial view sizes. I'm really not sure if will fit into other webcams
-     * but hope that OpenIMAJ can handle this.
-     */
     private final static Dimension[] DIMENSIONS = new Dimension[] {
             new Dimension(176, 144),
             new Dimension(320, 240),

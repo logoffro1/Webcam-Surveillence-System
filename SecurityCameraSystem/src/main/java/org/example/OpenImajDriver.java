@@ -13,12 +13,6 @@ import com.github.sarxos.webcam.WebcamDevice;
 import com.github.sarxos.webcam.WebcamDriver;
 import com.github.sarxos.webcam.WebcamTask;
 
-
-/**
- * This is webcam driver for OpenIMAJ library.
- *
- * @author Bartosz Firyn (SarXos)
- */
 public class OpenImajDriver implements WebcamDriver {
 
     static {
@@ -36,12 +30,6 @@ public class OpenImajDriver implements WebcamDriver {
         public GetDevicesTask(WebcamDriver driver) {
             super(driver, null);
         }
-
-        /**
-         * Return camera devices.
-         *
-         * @return Camera devices.
-         */
         public List<WebcamDevice> getDevices() {
             try {
                 process();
