@@ -276,7 +276,7 @@ CanvasBackground = {
 
         c.weatherBackground.removeClass();
         c.weatherBackground.addClass(w.dayOrNight);
-
+        condition = "Clouds";
         switch (condition) {
           case 'Thunderstorm':
             CanvasBackground.clearAllCanvases();
@@ -462,8 +462,10 @@ CanvasBackground = {
         var cloudSvg = '<svg width="100px" height="55px" viewBox="0 0 100 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><title>Group</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="cloud" sketch:type="MSLayerGroup" fill="' + color_var + '"><g id="Group" sketch:type="MSShapeGroup"><path d="M83.336,20.018 C81.412,13.644 75.501,9 68.5,9 C66.193,9 64.013,9.518 62.046,10.421 C57.008,4.074 49.232,0 40.5,0 C26.11,0 14.31,11.053 13.108,25.132 C5.719,26.064 0,32.358 0,40 C0,48.284 6.716,55 15,55 L83,55 C92.389,55 100,47.165 100,37.5 C100,27.952 92.568,20.204 83.336,20.018 L83.336,20.018 Z" id="Shape"></path><path d="M15,51 C8.935,51 4,46.065 4,40 C4,34.478 8.131,29.792 13.609,29.101 L16.819,28.696 L17.094,25.473 C18.122,13.432 28.403,4 40.5,4 C47.708,4 54.419,7.247 58.913,12.908 L60.864,15.366 L63.716,14.056 C65.241,13.355 66.851,13 68.5,13 C73.528,13 78.054,16.361 79.507,21.173 L80.347,23.958 L83.255,24.017 C90.283,24.158 96,30.207 96,37.5 C96,44.944 90.168,51 83,51 L15,51 L15,51 Z" id="Shape"></path></g></g></g></svg>';
          
         // Create a Data URI.
-        var cloudSrc = 'data:image/svg+xml;base64,'+window.btoa(cloudSvg);
-         
+      //  var cloudSrc = 'data:image/svg+xml;base64,'+window.btoa(cloudSvg);
+        var asuPics = ["asu.png","asu2.png"]
+        var rnd = Math.floor(Math.random() * asuPics.length);
+         var cloudSrc = "images/" + asuPics[rnd];
         // Load up our image.
         var cloudSource = new Image();
         cloudSource.src = cloudSrc;
@@ -473,7 +475,7 @@ CanvasBackground = {
             spacing = 100,
             xSpacing = 0,
             n = innerWidth / spacing,
-            sizes = [[100,55], [90, 49.5], [80, 44]],
+            sizes = [[70,70], [70, 70], [70, 70]],
             i;
             
             for (i = 0; i < n; i++){

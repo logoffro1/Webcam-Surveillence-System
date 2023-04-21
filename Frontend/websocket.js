@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-	var ws = new WebSocket("ws://9f11-80-114-172-251.ngrok-free.app");
+	var ws = new WebSocket("ws://2902-80-114-172-251.ngrok-free.app");
 	//var ws = new WebSocket("ws://127.0.0.1:8123");
 	ws.onopen = function(e) {
 		if (typeof console !== 'undefined') {
