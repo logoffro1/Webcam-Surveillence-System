@@ -1,6 +1,3 @@
-let password = prompt("Password");
-if(password == "bigchongus"){
-
 
 $(document).ready(function() {
 	var ws = new WebSocket("ws://b821-80-114-172-251.ngrok-free.app");
@@ -61,4 +58,3 @@ $(document).ready(function() {
 		}
 	};
 });
-}

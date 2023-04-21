@@ -1,6 +1,6 @@
 
-*{
-	background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(103, 107, 163,1));
+#backgroundcol{
+	background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(216, 235, 220,1));
 	background-repeat: no-repeat;
 	background-position: center;
 background-size: auto;  
@@ -14,13 +14,14 @@ background-size: auto;
 .shadow {
 	border: 1px solid #f00;
 	transition: all .5s ease-in;
+
 }
 
 img {
 	margin-left: 8px;
 	margin-bottom: 8px;
-	width: 640px;
-	height: 480px;
+	width: 512px;
+	height: 350px;
 	box-shadow: 0 0 16px #444;
 	border: 1px solid #fff;
 	transition: all 1s ease-in;

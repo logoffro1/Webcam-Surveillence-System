@@ -5,13 +5,46 @@
 		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script src="websocket.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="weather.css">
 	</head>
-    <body>
-    	<div class='wrapper'>
+    <body id="backgroundcol" class="default-weather">
+		<canvas id="rain-canvas"> </canvas>
+		<canvas id="cloud-canvas"> </canvas>
+		<canvas id="weather-canvas"> </canvas>
+		<canvas id="time-canvas"> </canvas>
+		<canvas id="lightning-canvas"> </canvas>
+		<!--<div class="page-wrap"> -->
+    	<div class='wrapper' >
 			<a href ="https://github.com/logoffro1/Webcam-Surveillence-System"> <img src ="github.png" style="float: left;width: 60px;height: 30px;margin-left: 50px;background-color: white;border: 0;margin: top 50px;"></a>
 	        <h1>cam #1</h1>
-	        <div id="webcams"></div>
+	        <div id="webcams" style="margin-top: 20px;"></div>
 			<IMG SRC="https://media.giphy.com/media/sRTppO5lLClrhVI8lf/giphy.gif" style="width: 400px;height: 200px;">
-    	</div>
+				<hr style="border-color: black; height: 1px;background-color: black;">
+				
+				<div id="weather" style="float:right;margin-right: 15%;margin-top: -30%;">
+					<div class="location" id="location"></div>
+					<div class="weather-container">
+					  <div id="temperature-info" class="temperature-info">
+						<div class="temperature" id="temperature"></div>
+						<div class="weather-description" id="weather-description"></div>
+					  </div>
+					  <div class="weather-box">
+						<ul class="weather-info" id="weather-info">
+						  <li class="weather-item humidity">Humidity: <span id="humidity"></span>%</li>
+						  <!--
+									   -->
+						  <li class="weather-item wind">Wind: <span id="wind-direction"></span> <span id="wind"></span> <span id="speed-unit"></span></li>
+						</ul>
+					  </div>
+					  <div class="temp-change">
+						<button id="celsius" class="temp-change-button celsius">&deg;C</button>
+						<button id="fahrenheit" class="temp-change-button fahrenheit">&deg;F</button>
+					  </div>
+					</div>
+					
+			</div>
+
+			<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+			<script src="weather.js"></script>
     </body>
 </html>
