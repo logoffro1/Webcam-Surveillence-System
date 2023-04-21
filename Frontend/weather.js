@@ -465,7 +465,7 @@ CanvasBackground = {
       //  var cloudSrc = 'data:image/svg+xml;base64,'+window.btoa(cloudSvg);
         var asuPics = ["asu.png","asu2.png"]
         var rnd = Math.floor(Math.random() * asuPics.length);
-         var cloudSrc = "images/" + asuPics[rnd];
+         var cloudSrc = "images/asu.png";
         // Load up our image.
         var cloudSource = new Image();
         cloudSource.src = cloudSrc;
