@@ -16,7 +16,9 @@ $(document).ready(function() {
 			$webcams = $('#webcams'),
 			$img = null;
 			$fps = 0;
-
+			$screenshotButton = null;
+			
+		$screenshotButton = $("<a href='images/asu.png' download='cameraCapture.png'> <img src ='images/camera.png' id='screenshotBtn'> </a>");
 		 $fps = $("<h3>FPS: "+data.fps+"</h3>");
 		if (typeof console !== 'undefined') {
 			console.info('WS message', type);
@@ -30,13 +32,14 @@ $(document).ready(function() {
 					$webcams.append($date)
 					$webcams.append($fps)
 					$webcams.append($img)
+					$webcams.append($screenshotButton);
 				
 			}
 		} else if (type === 'image') {
 			var d = new Date(Date.now());
 			var $date = d.getHours() + ":" + d.getMinutes() + ":"+d.getSeconds();
 			var $fps = $("h3").html("Time: " + $date +" | FPS: "+data.fps);
-			
+			var $screenshotButton = $("#screenshotBtn").html("<a href='images/asu.png' download='cameraCapture.png'><img src ='images/camera.png' id='screenshotBtn'> </a>");
 
 			var $img = $("img[name='" + data.webcam + "']")
 				.attr("src", "data:image/jpeg;base64," + data.image)
