@@ -72,7 +72,7 @@ $(document).ready(function() {
 		ctx.drawImage(img, 0,0, width, height);
 		ctx.fillStyle = "#00FFFF";
 		ctx.font = "20px Arial";
-		ctx.fillText(d+" | Cosmin Cam #1", 10, 20);
+		ctx.fillText(d+" | Cosmas Cam #1", 10, 20);
 		// encode image to data-uri with base64 version of compressed image
 		return canvas.toDataURL("image/jpeg").split(';base64,')[1];
 	}
