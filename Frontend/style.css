@@ -26,3 +26,10 @@ img {
 	border: 1px solid #fff;
 	transition: all 1s ease-in;
 }
+#screenshotBtn{
+	margin-top: 165px;
+	position: absolute;
+	border-radius:95%;
+	width: 70px;
+	height: 50px;
+}
