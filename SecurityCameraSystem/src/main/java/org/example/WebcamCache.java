@@ -7,6 +7,7 @@ import com.github.sarxos.webcam.WebcamUpdater;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -36,6 +37,7 @@ public class WebcamCache implements WebcamUpdater.DelayCalculator, WebcamListene
     public WebcamCache() {
         webcams.clear();
         Webcam webcam = Webcam.getDefault();
+        webcam.setViewSize(new Dimension(1920, 1080));
         webcam.addWebcamListener(this);
         webcam.open(true, this);
         webcams.put(webcam.getName(), webcam);
