@@ -19,8 +19,8 @@ background-size: auto;
 img {
 	margin-left: 8px;
 	margin-bottom: 8px;
-	width: 512px;
-	height: 350px;
+	width: 640px;
+	height: 360px;
 	box-shadow: 0 0 16px #444;
 	border: 1px solid #fff;
 	transition: all 1s ease-in;
