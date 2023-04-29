@@ -37,7 +37,7 @@ public class WebcamCache implements WebcamUpdater.DelayCalculator, WebcamListene
     public WebcamCache() {
         webcams.clear();
         Webcam webcam = Webcam.getDefault();
-        webcam.setViewSize(new Dimension(640, 400));
+        webcam.setViewSize(new Dimension(1280, 720));
         webcam.addWebcamListener(this);
         webcam.open(true, this);
         webcams.put(webcam.getName(), webcam);
