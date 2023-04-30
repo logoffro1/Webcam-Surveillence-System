@@ -17,7 +17,7 @@ background-size: auto;
 	margin-top: -30%;
 }
 .shadow {
-	border: 1px solid #f00;
+	border: 1px solid #601785;
 	transition: all .5s ease-in;
 
 }
@@ -25,7 +25,7 @@ img {
 	margin-left: 8px;
 	margin-bottom: 8px;
 	width: 640px;
-	height: 360px;
+	height: 400px;
 	box-shadow: 0 0 16px #444;
 	border: 1px solid #fff;
 	transition: all 1s ease-in;
